@@ -35,8 +35,6 @@ for data in soup.find_all('article', {'data-component': 'PostCard'}):
     else:
         headinng = "Title not found"
     
-
-    
     link = data.find('a')
     linked = link.get('href')
 
